@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number magic</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="js/function.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <img src="resources/img/logo1.svg" alt="Logo" id="logo">
+
+            <div>
+                <label>Enter a number: </label><br>
+                <input type="number" id="input" placeholder="Enter a number"><br>
+                <button id="button" class="button_blue" type="button" onclick="saveNumber()">Accept</button>
+                <button id="reload" class="button_blue" onclick="location.reload()">Reload</button>
+                <audio id="audio" src="resources/audio/Aparentemente.mp3" autoplay></audio>
+                <button id="music" class="button_music" onclick="toggleAudio()"><i class="fas fa-music icono" id="icon_music"></i></button>
+            
+                <p id="result"></p>
+            </div>
+
+            <div>
+                <p id="attempts">Attempts: <span id="number_attempts">0</span></p>
+                
+                <p id="entered">Numbers entered: <span id="numbers_entered"></span></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
